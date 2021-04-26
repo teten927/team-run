@@ -96,7 +96,6 @@ export default {
     },
     doSend: async function () {
       if (this.input === "") return;
-      this.input = "";
       await this.$store.dispatch("addChatMessage", this.input).catch(() => {
         this.$store.commit("setResultMsgModalInfo", {
           result: "failure",
@@ -104,6 +103,7 @@ export default {
           onClick: () => {},
         });
       });
+            this.input = "";
       this.scrollToBottom();
     },
     moment: function (value, format) {
