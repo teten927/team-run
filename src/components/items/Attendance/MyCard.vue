@@ -144,7 +144,7 @@ export default {
     return {
       statusWord: null,
       color: null,
-      isAttendance: false,
+      isAttendance: ,
       buttonLabel: null,
       showAttendanceModalSwitch: false,
       showStatusModalSwitch: false,
